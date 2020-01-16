@@ -17,8 +17,16 @@ print(hello_name('Bob'))
 make_abba('Hi', 'Bye') → 'HiByeByeHi'
 make_abba('Yo', 'Alice') → 'YoAliceAliceYo'
 make_abba('What', 'Up') → 'WhatUpUpWhat' """
-
+""" 
 def make_abba(a, b):
     return a + b + b + a
 
 print(make_abba("Hi", "Bye"))    
+ """
+
+
+
+def make_tags(tag, word):
+    return "<" + tag + ">" + word + "</" + tag + ">"
+
+print(make_tags("i", "Yay"))    
