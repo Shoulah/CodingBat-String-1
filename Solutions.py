@@ -38,9 +38,16 @@ def make_out_word(out, word):
 
 print(make_out_word("<<>>", "Ahmed Shoulah"))
  """         
-
-
+""" 
 def extra_end(str):
     return str[len(str)-2: len(str)] * 3
 
 print(extra_end("ABCD"))
+ """
+def first_two(str):
+    if len(str) < 2:
+        return str
+    else:
+        return str[0:2]
+
+print(first_two("Ahmed"))        
