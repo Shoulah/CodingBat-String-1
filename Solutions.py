@@ -25,8 +25,15 @@ print(make_abba("Hi", "Bye"))
  """
 
 
-
+""" 
 def make_tags(tag, word):
     return "<" + tag + ">" + word + "</" + tag + ">"
 
 print(make_tags("i", "Yay"))    
+ """
+
+def make_out_word(out, word):
+     if len(out) == 4:
+         return out[0:2] + word + out[2:4]
+
+print(make_out_word("<<>>", "Ahmed Shoulah"))         
