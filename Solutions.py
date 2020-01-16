@@ -31,9 +31,16 @@ def make_tags(tag, word):
 
 print(make_tags("i", "Yay"))    
  """
-
+""" 
 def make_out_word(out, word):
      if len(out) == 4:
          return out[0:2] + word + out[2:4]
 
-print(make_out_word("<<>>", "Ahmed Shoulah"))         
+print(make_out_word("<<>>", "Ahmed Shoulah"))
+ """         
+
+
+def extra_end(str):
+    return str[len(str)-2: len(str)] * 3
+
+print(extra_end("ABCD"))
