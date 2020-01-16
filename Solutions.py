@@ -52,9 +52,25 @@ print(extra_end("ABCD"))
 
 print(first_two("Ahmed"))        
  """
-
+""" 
 def first_half(str): 
     return str[0:int(len(str) / 2)]
 
 
 print(first_half("abcDFG"))
+
+ """
+""" 
+def without_end(str):
+    return str[1:len(str) -1]
+
+
+print(without_end("AB"))    
+ """ 
+def combo_string(a, b):
+    if len(a) >= len(b):
+        return b + a + b
+    else:
+        return a + b + a 
+
+print(combo_string("ab", "CDF"))           
