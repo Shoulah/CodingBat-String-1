@@ -44,10 +44,17 @@ def extra_end(str):
 
 print(extra_end("ABCD"))
  """
-def first_two(str):
+""" def first_two(str):
     if len(str) < 2:
         return str
     else:
         return str[0:2]
 
 print(first_two("Ahmed"))        
+ """
+
+def first_half(str): 
+    return str[0:int(len(str) / 2)]
+
+
+print(first_half("abcDFG"))
