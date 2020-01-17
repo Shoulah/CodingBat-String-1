@@ -75,8 +75,17 @@ print(without_end("AB"))
 
 print(combo_string("ab", "CDF")) 
  """          
-def non_start(a, b):
+""" def non_start(a, b):
      return a[1:len(a)] + b[1:len(b)]
 
 
 print(non_start("aAhmed", "sShoulah"))
+ """
+
+
+def left2(str):
+    fistTwo = str[0:2]
+    if len(str) > 2:
+        return str[2:len(str)] + fistTwo
+    else:
+        return str
