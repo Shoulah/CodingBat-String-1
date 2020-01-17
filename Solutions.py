@@ -67,10 +67,16 @@ def without_end(str):
 
 print(without_end("AB"))    
  """ 
-def combo_string(a, b):
+""" def combo_string(a, b):
     if len(a) >= len(b):
         return b + a + b
     else:
         return a + b + a 
 
-print(combo_string("ab", "CDF"))           
+print(combo_string("ab", "CDF")) 
+ """          
+def non_start(a, b):
+     return a[1:len(a)] + b[1:len(b)]
+
+
+print(non_start("aAhmed", "sShoulah"))
